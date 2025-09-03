@@ -2,14 +2,20 @@ name: "Hello World Workflow"
 
 # This workflow triggers on pushes to the main and production branches
 on:
-    push:
-        branches:
-        - main
-        - production
+  push:
+    branches:
+      - main
+      - production
 
 jobs:
-    hello_world:
-        runs-on: ubuntu-latest
-        steps:
-        - name: "Print Hello World"
-          run: echo "Hello, World!"
+  hello_world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Print Hello World"
+        run: echo "Hello, World!!!"
+
+      - name: "Another step is to print the date"
+        run: date
+
+      - name: "Print the current branch"
+        run: echo "The current branch is ${{ github.ref_name }}"
