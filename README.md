@@ -1,1 +1,1 @@
-# Sample-Github-Workflow
+Echo "Hello github Actions"  hello kriti
