@@ -13,3 +13,7 @@ jobs:
         steps:
         - name: "Print Hello World"
           run: echo "Hello, World!!!"
+        - name: "Another step is to print the date"
+          run: date
+        - name: "Print the current branch"
+            run: echo "The current branch is ${{ github.ref_name }}"
