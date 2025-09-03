@@ -1,1 +1,1 @@
-Echo "Hello github Actions"  hello kriti
+Echo "Hello github Actions"  hello kriti . Thsi project is to test my knowledge on git
